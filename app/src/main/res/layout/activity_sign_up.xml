@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.SignUp"
+    android:background="@color/white">
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/g1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1"/>
+
+
+    <ImageView
+        android:id="@+id/my_image_signUp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintWidth_percent="0.50"
+        app:layout_constraintHeight_percent="0.25"
+        app:layout_constraintTop_toBottomOf="@+id/g1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/amit" />
+
+
+    <EditText
+        android:layout_marginHorizontal="@dimen/_21sdp"
+        android:id="@+id/userName_signUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/my_image_signUp"
+        android:drawableStart="@drawable/ic_user"
+        android:drawablePadding="@dimen/_10sdp"
+        android:hint="@string/userName"
+        android:textColorHint="@color/grey"
+        android:inputType="textPersonName"
+        android:textColor="@color/black"
+        android:drawableLeft="@drawable/ic_user" />
+
+    <EditText
+        android:layout_marginVertical="@dimen/_21sdp"
+        android:layout_marginHorizontal="@dimen/_21sdp"
+        android:textColor="@color/black"
+        android:id="@+id/email_signUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/email"
+        android:drawableStart="@drawable/ic_mail"
+        android:drawablePadding="@dimen/_10sdp"
+        android:textColorHint="@color/grey"
+        android:inputType="textEmailAddress"
+        app:layout_constraintTop_toBottomOf="@id/userName_signUp"
+        android:drawableLeft="@drawable/ic_mail" />
+
+    <EditText
+        android:layout_marginVertical="@dimen/_21sdp"
+        android:layout_marginHorizontal="@dimen/_21sdp"
+        android:textColor="@color/black"
+        android:id="@+id/password_signUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/pass"
+        android:drawableStart="@drawable/ic_lock"
+        android:drawablePadding="@dimen/_10sdp"
+        android:textColorHint="@color/grey"
+        android:inputType="textPassword"
+        android:textAlignment="viewStart"
+        app:layout_constraintTop_toBottomOf="@id/email_signUp"
+        android:drawableLeft="@drawable/ic_lock"
+        android:gravity="start" />
+
+
+
+
+    <Button
+        android:id="@+id/signUp_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/password_signUp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/signUp_btn"
+        android:textSize="@dimen/_14sdp"
+        android:background="@drawable/background_btn"
+        android:layout_marginVertical="@dimen/_20sdp"
+        />
+
+    <TextView
+        android:id="@+id/have_acc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/signUp_btn"
+        android:textSize="22sp"
+        android:text="@string/have_acc_message"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:textColor="@color/black"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
