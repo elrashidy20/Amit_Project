@@ -6,5 +6,12 @@
     tools:context=".ui.fragment.ProfileFragment">
 
     <!-- TODO: Update blank fragment layout -->
-
+    <Button
+        android:background="@drawable/background_btn"
+        android:id="@+id/button_Log_out"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log Out"
+        android:textSize="@dimen/_21sdp"
+        android:layout_marginVertical="@dimen/_27sdp"></Button>
 </FrameLayout>
